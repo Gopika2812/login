@@ -25,8 +25,13 @@ const SignIn = () => {
   return (
     <div className="container">
       <div className="left">
-        <div className="brand">ELite <span>Memon</span></div>
-        <h2 className="headline">SIGN IN TO YOUR <br></br><span>ADVENTURE!</span></h2>
+        <div className="top-row">
+          <div className="brand">ELite <span>Memon</span></div>
+          <p className="subtext">HAVE AN ACCOUNT? SIGN IN</p>
+        </div>
+        <h2 className="headline">
+          SIGN IN TO YOUR <br /><span>ADVENTURE!</span>
+        </h2>
       </div>
 
       <div className="right">
@@ -34,9 +39,7 @@ const SignIn = () => {
         <p>Sign in with email address</p>
         <input type="email" placeholder="Yourname@gmail.com" />
         <button className="signup-btn">Sign up</button>
-
-        <div className="divider"></div>
-
+        <div className="divider"></div>        
         <p>Or continue with</p>
         <div className="socials">
           <button className="social google" onClick={handleGoogleLogin}>
@@ -52,7 +55,11 @@ const SignIn = () => {
         <p className="terms">
           By registering you with our <span>Terms and Conditions</span>
         </p>
-      </div>
+  
+    </div>
+    <div className="foot">
+        <p className="text">Copyright by ELite Memon</p>
+    </div>
     </div>
   );
 };
